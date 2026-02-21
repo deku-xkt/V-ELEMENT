@@ -1,0 +1,170 @@
+.vk-alert {
+  --vk-alert-padding: 8px 16px;
+  --vk-alert-border-radius: var(--vk-border-radius-base);
+  --vk-alert-title-font-size: var(--vk-font-size-base);
+  --vk-alert-description-font-size: var(--vk-font-size-small);
+  --vk-alert-close-font-size: var(--vk-font-size-base);
+  --vk-alert-close-cursor: pointer;
+  --vk-alert-icon-size: 16px;
+  --vk-alert-icon-margin-right: 8px;
+}
+
+.vk-alert {
+  width: 100%;
+  padding: var(--vk-alert-padding);
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: var(--vk-alert-border-radius);
+  position: relative;
+  background-color: var(--vk-alert-bg-color);
+  overflow: hidden;
+  opacity: 1;
+  display: flex;
+  align-items: flex-start;
+  transition: opacity var(--vk-transition-duration);
+}
+
+.vk-alert__content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.vk-alert__icon {
+  font-size: var(--vk-alert-icon-size);
+  width: var(--vk-alert-icon-size);
+  margin-right: var(--vk-alert-icon-margin-right);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.vk-alert__message {
+  flex: 1;
+  word-break: break-all;
+}
+
+.vk-alert__title {
+  font-size: var(--vk-alert-title-font-size);
+  line-height: 24px;
+  margin: 0 0 4px 0;
+  font-weight: var(--vk-font-weight-primary);
+  color: var(--vk-alert-title-color);
+}
+
+.vk-alert__description {
+  font-size: var(--vk-alert-description-font-size);
+  line-height: 21px;
+  margin: 0;
+  color: var(--vk-alert-description-color);
+}
+
+.vk-alert__close {
+  flex-shrink: 0;
+  cursor: var(--vk-alert-close-cursor);
+  font-size: var(--vk-alert-close-font-size);
+  color: var(--vk-alert-close-color);
+  opacity: 1;
+  transition: opacity var(--vk-transition-duration);
+}
+
+.vk-alert__close:hover {
+  opacity: 0.8;
+}
+
+.vk-alert__close-icon {
+  font-size: var(--vk-alert-close-font-size);
+}
+
+.vk-alert__close-text {
+  font-size: var(--vk-alert-close-font-size);
+  user-select: none;
+}
+
+/* Light 效果 - 浅色背景 */
+.vk-alert--light {
+  background-color: var(--vk-alert-bg-color);
+  border: var(--vk-border);
+  border-color: var(--vk-alert-border-color);
+}
+
+/* Dark 效果 - 深色背景 */
+.vk-alert--dark {
+  background-color: var(--vk-alert-bg-color);
+  border: none;
+}
+
+/* Success 类型 */
+.vk-alert--success {
+  --vk-alert-bg-color: var(--vk-color-success-light-9);
+  --vk-alert-border-color: var(--vk-color-success-light-7);
+  --vk-alert-title-color: var(--vk-color-success);
+  --vk-alert-description-color: var(--vk-color-success);
+  --vk-alert-close-color: var(--vk-color-success);
+}
+
+.vk-alert--success.vk-alert--dark {
+  --vk-alert-bg-color: var(--vk-color-success);
+  --vk-alert-title-color: var(--vk-color-white);
+  --vk-alert-description-color: var(--vk-color-white);
+  --vk-alert-close-color: var(--vk-color-white);
+}
+
+/* Info 类型 */
+.vk-alert--info {
+  --vk-alert-bg-color: var(--vk-color-info-light-9);
+  --vk-alert-border-color: var(--vk-color-info-light-7);
+  --vk-alert-title-color: var(--vk-color-info);
+  --vk-alert-description-color: var(--vk-color-info);
+  --vk-alert-close-color: var(--vk-color-info);
+}
+
+.vk-alert--info.vk-alert--dark {
+  --vk-alert-bg-color: var(--vk-color-info);
+  --vk-alert-title-color: var(--vk-color-white);
+  --vk-alert-description-color: var(--vk-color-white);
+  --vk-alert-close-color: var(--vk-color-white);
+}
+
+/* Warning 类型 */
+.vk-alert--warning {
+  --vk-alert-bg-color: var(--vk-color-warning-light-9);
+  --vk-alert-border-color: var(--vk-color-warning-light-7);
+  --vk-alert-title-color: var(--vk-color-warning);
+  --vk-alert-description-color: var(--vk-color-warning);
+  --vk-alert-close-color: var(--vk-color-warning);
+}
+
+.vk-alert--warning.vk-alert--dark {
+  --vk-alert-bg-color: var(--vk-color-warning);
+  --vk-alert-title-color: var(--vk-color-white);
+  --vk-alert-description-color: var(--vk-color-white);
+  --vk-alert-close-color: var(--vk-color-white);
+}
+
+/* Danger 类型 */
+.vk-alert--danger {
+  --vk-alert-bg-color: var(--vk-color-danger-light-9);
+  --vk-alert-border-color: var(--vk-color-danger-light-7);
+  --vk-alert-title-color: var(--vk-color-danger);
+  --vk-alert-description-color: var(--vk-color-danger);
+  --vk-alert-close-color: var(--vk-color-danger);
+}
+
+.vk-alert--danger.vk-alert--dark {
+  --vk-alert-bg-color: var(--vk-color-danger);
+  --vk-alert-title-color: var(--vk-color-white);
+  --vk-alert-description-color: var(--vk-color-white);
+  --vk-alert-close-color: var(--vk-color-white);
+}
+
+/* 淡入淡出动画 */
+.vk-alert-fade-enter-active,
+.vk-alert-fade-leave-active {
+  transition: opacity var(--vk-transition-duration);
+}
+
+.vk-alert-fade-enter-from,
+.vk-alert-fade-leave-to {
+  opacity: 0;
+}
+
