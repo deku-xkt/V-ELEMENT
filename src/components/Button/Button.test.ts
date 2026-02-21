@@ -15,7 +15,7 @@ describe('Button.vue', () => {
       }
     })
     console.log(wrapper.html())
-    expect(wrapper.classes()).toContain('vk-button--primary')
+    expect(wrapper.get('button').classes()).toContain('vk-button--primary')
     // slot
     // get, find
     expect(wrapper.get('button').text()).toBe('button')
@@ -34,7 +34,7 @@ describe('Button.vue', () => {
       }
     })
     // attributes
-    expect(wrapper.attributes('disabled')).toBeDefined()
+    expect(wrapper.get('button').attributes('disabled')).toBeDefined()
     // attributes
     expect(wrapper.find('button').element.disabled).toBeDefined()
     wrapper.get('button').trigger('click')
@@ -72,6 +72,6 @@ describe('Button.vue', () => {
     const iconElement = wrapper.findComponent(Icon)
     expect(iconElement.exists()).toBeTruthy()
     expect(iconElement.attributes('icon')).toBe('spinner')
-    expect(wrapper.attributes('disabled')).toBeDefined()
+    expect(wrapper.get('button').attributes('disabled')).toBeDefined()
   })
 })

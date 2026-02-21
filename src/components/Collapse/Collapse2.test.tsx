@@ -9,7 +9,7 @@ describe('Collapse.vue', () => {
         modelValue: ['a']
       },
       slots: {
-        default: (
+        default: () => (
           <>
             <CollapseItem name="a" title="title a">
               content a

@@ -90,8 +90,8 @@ export default defineComponent({
           openDelay={props.openDelay}
           closeDelay={props.closeDelay}
           manual={props.manual}
-          ref={tooltipRef}
-          onVisibleChange={visibleChange}
+          ref={tooltipRef as any}
+          {...{ 'onVisible-change': visibleChange }}
         >
           {{
             default: () => slots.default && slots.default(),

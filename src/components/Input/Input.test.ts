@@ -44,9 +44,11 @@ describe('Input', () => {
     const wrapper = mount(Input, {
       props: {
         modelValue: 'test',
-        'onUpdate:modelValue': (e: any) => wrapper.setProps({ modelValue: e }),
         type: 'text'
       }
+    })
+    await wrapper.setProps({
+      'onUpdate:modelValue': (e: any) => wrapper.setProps({ modelValue: e })
     })
     // 初始值
     const input = wrapper.get('input')

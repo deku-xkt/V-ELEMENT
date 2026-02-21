@@ -26,12 +26,12 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "turbo": "turbo",
-    "turbo:dev": "turbo run dev --parallel",
-    "turbo:build": "turbo run build",
-    "turbo:lint": "turbo run lint",
-    "turbo:test": "turbo run test",
-    "turbo:type-check": "turbo run type-check",
-    "turbo:docs:build": "turbo run docs:build",
+    "turbo:dev": "turbo run dev --parallel --cache=local:r,remote:r",
+    "turbo:build": "turbo run build --cache=local:r,remote:r",
+    "turbo:lint": "turbo run lint --cache=local:r,remote:r",
+    "turbo:test": "turbo run test --cache=local:r,remote:r",
+    "turbo:type-check": "turbo run type-check --cache=local:r,remote:r",
+    "turbo:docs:build": "turbo run docs:build --cache=local:r,remote:r",
     "prepare": "husky"
   },
   "dependencies": {
