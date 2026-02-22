@@ -2,6 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # 在推送前运行类型检查和测试
-pnpm type-check
-pnpm test
+pnpm turbo:type-check
+pnpm turbo:test
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# 在提交前运行 lint 检查
-pnpm lint
+# run checks only for staged files
+pnpm lint-staged
