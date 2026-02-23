@@ -4,6 +4,7 @@ description: Input 组件的文档
 ---
 
 # Input 输入框
+
 通过鼠标或键盘输入字符
 
 ## 基础文本框
@@ -14,14 +15,13 @@ description: Input 组件的文档
 
 通过 **disabled** 属性指定是否禁用 input 组件
 
-
 <preview path="../demo/Input/Disable.vue" title="禁用文本框" description="Input 禁用文本框"></preview>
 
 ## 尺寸
+
 使用 size 属性改变输入框大小。 除了默认大小外，还有另外两个选项： **large**, **small**。
 
 <preview path="../demo/Input/Size.vue" title="不同尺寸文本框" description="不同尺寸文本框"></preview>
-
 
 ## 复合型输入框
 
@@ -45,6 +45,5 @@ description: Input 组件的文档
 ## 清空文本框
 
 使用 **clearable** 属性即可得到一个可一键清空的输入框
-
 
 <preview path="../demo/Input/Clear.vue" title="清空文本框" description="Input 清空文本框"></preview>

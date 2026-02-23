@@ -25,14 +25,14 @@
     }
   }
   &.is-disabled {
-    opacity: .6;
+    opacity: 0.6;
     .vk-switch__core {
       cursor: not-allowed;
     }
   }
   &.is-checked {
     .vk-switch__core {
-      border-color:var(--vk-switch-on-border-color);
+      border-color: var(--vk-switch-on-border-color);
       background-color: var(--vk-switch-on-color);
       .vk-switch__core-action {
         left: calc(100% - 17px);
@@ -95,7 +95,9 @@
   box-sizing: border-box;
   background: var(--vk-switch-off-color);
   cursor: pointer;
-  transition: border-color var(--vk-transition-duration),background-color var(--vk-transition-duration);
+  transition:
+    border-color var(--vk-transition-duration),
+    background-color var(--vk-transition-duration);
   .vk-switch__core-action {
     position: absolute;
     left: 1px;

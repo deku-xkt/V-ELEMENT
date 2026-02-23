@@ -39,26 +39,25 @@ Alert 组件提供了 4 种类型，由 `type` 属性指定，默认值为 `info
 
 ## Alert Attributes
 
-| 参数          | 说明                                                         | 类型                                    | 默认值 |
-| ------------- | ------------------------------------------------------------ | --------------------------------------- | ------ |
-| title         | 标题                                                         | `string`                                | —      |
-| description   | 描述性文本                                                   | `string`                                | —      |
-| type          | 类型                                                         | `'success' \| 'info' \| 'warning' \| 'danger'` | info   |
-| closable      | 是否可关闭                                                   | `boolean`                               | false  |
-| show-icon     | 是否显示图标                                                 | `boolean`                               | false  |
-| close-text    | 关闭按钮自定义文本                                           | `string`                                | —      |
-| effect        | 主题样式                                                     | `'light' \| 'dark'`                     | light  |
+| 参数        | 说明               | 类型                                           | 默认值 |
+| ----------- | ------------------ | ---------------------------------------------- | ------ |
+| title       | 标题               | `string`                                       | —      |
+| description | 描述性文本         | `string`                                       | —      |
+| type        | 类型               | `'success' \| 'info' \| 'warning' \| 'danger'` | info   |
+| closable    | 是否可关闭         | `boolean`                                      | false  |
+| show-icon   | 是否显示图标       | `boolean`                                      | false  |
+| close-text  | 关闭按钮自定义文本 | `string`                                       | —      |
+| effect      | 主题样式           | `'light' \| 'dark'`                            | light  |
 
 ## Alert Events
 
-| 事件名 | 说明           | 回调参数 |
-| ------ | -------------- | -------- |
+| 事件名 | 说明              | 回调参数 |
+| ------ | ----------------- | -------- |
 | close  | 关闭 alert 时触发 | —        |
 
 ## Alert Slots
 
-| 插槽名      | 说明           |
-| ----------- | -------------- |
-| default     | 描述内容       |
-| title       | 自定义标题内容 |
-
+| 插槽名  | 说明           |
+| ------- | -------------- |
+| default | 描述内容       |
+| title   | 自定义标题内容 |

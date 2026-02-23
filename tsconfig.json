@@ -7,7 +7,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["vue","unplugin-vue-macros/macros-global" /* ... */],
+    "types": ["vue", "unplugin-vue-macros/macros-global" /* ... */],
     "skipLibCheck": true
   },
   "vueCompilerOptions": {

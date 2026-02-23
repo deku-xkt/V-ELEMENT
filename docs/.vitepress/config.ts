@@ -14,28 +14,28 @@ export default defineConfig({
         setupComponent: false,
         setupSFC: false,
         plugins: {
-          vueJsx: vueJsx(),
-        },
-      }),
+          vueJsx: vueJsx()
+        }
+      })
     ],
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('../../src', import.meta.url)),
-      },
-    },
+        '@': fileURLToPath(new URL('../../src', import.meta.url))
+      }
+    }
   },
   markdown: {
     config(md) {
       md.use(containerPreview)
       md.use(componentPreview)
-    },
+    }
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Test', link: '/markdown-examples' },
+      { text: 'Test', link: '/markdown-examples' }
     ],
 
     sidebar: [
@@ -43,8 +43,8 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
+          { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
       },
       {
         text: '组件',
@@ -53,11 +53,11 @@ export default defineConfig({
           { text: 'Button 按钮', link: '/components/button' },
           { text: 'Input 输入框', link: '/components/input' },
           { text: 'Select 选择器', link: '/components/select' },
-          { text: 'Switch 开关', link: '/components/switch' },
-        ],
-      },
+          { text: 'Switch 开关', link: '/components/switch' }
+        ]
+      }
     ],
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
-  },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }]
+  }
 })
