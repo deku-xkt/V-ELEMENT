@@ -15,7 +15,7 @@
     padding: 0;
   }
   .vk-input.is-focus .vk-input__wrapper {
-    box-shadow: 0 0 0 1px var(--vk-select-input-focus-border-color) inset!important
+    box-shadow: 0 0 0 1px var(--vk-select-input-focus-border-color) inset !important;
   }
   .vk-input {
     .header-angle {
@@ -35,7 +35,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  .vk-select__menu-item { 
+  .vk-select__menu-item {
     margin: 0;
     font-size: var(--vk-select-item-font-size);
     padding: 0 32px 0 20px;
@@ -53,7 +53,7 @@
     }
     &.is-selected {
       color: var(--vk-select-item-selected-font-color);
-      font-weight: 700;    
+      font-weight: 700;
     }
     &.is-disabled {
       color: var(--vk-select-item-disabled-font-color);
@@ -62,6 +62,5 @@
         background-color: transparent;
       }
     }
-
   }
 }

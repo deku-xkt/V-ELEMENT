@@ -3,21 +3,15 @@
   /* colors */
   --vk-color-white: #ffffff;
   --vk-color-black: #000000;
-  --colors: (
-    primary: #409eff,
-    success: #67c23a,
-    warning: #e6a23c,
-    danger: #f56c6c,
-    info: #909399
-  );
+  --colors: (primary: #409eff, success: #67c23a, warning: #e6a23c, danger: #f56c6c, info: #909399);
 
   @each $val, $color in var(--colors) {
     --vk-color-$(val): $(color);
     @for $i from 3 to 9 by 2 {
-      --vk-color-$(val)-light-$(i): mix(#fff, $(color), .$(i))
+      --vk-color-$(val)-light-$(i): mix(#fff, $(color), .$(i));
     }
-    --vk-color-$(val)-light-8: mix(#fff, $(color), .8);
-    --vk-color-$(val)-dark-2: mix(#000, $(color), .2);
+    --vk-color-$(val)-light-8: mix(#fff, $(color), 0.8);
+    --vk-color-$(val)-dark-2: mix(#000, $(color), 0.2);
   }
 
   --vk-bg-color: #ffffff;
@@ -59,16 +53,17 @@
   --vk-font-size-base: 14px;
   --vk-font-size-small: 13px;
   --vk-font-size-extra-small: 12px;
-  --vk-font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", Arial, sans-serif;
+  --vk-font-family:
+    'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
   --vk-font-weight-primary: 500;
 
   /*disabled*/
   --vk-disabled-bg-color: var(--vk-fill-color-light);
   --vk-disabled-text-color: var(--vk-text-color-placeholder);
   --vk-disabled-border-color: var(--vk-border-color-light);
-  
-  /*animation*/
-  --vk-transition-duration: .3s;
-  --vk-transition-duration-fast: .2s;
 
+  /*animation*/
+  --vk-transition-duration: 0.3s;
+  --vk-transition-duration-fast: 0.2s;
 }

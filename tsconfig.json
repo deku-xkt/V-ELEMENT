@@ -4,10 +4,12 @@
   "exclude": ["node_modules", "dist"],
   "compilerOptions": {
     "baseUrl": ".",
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["vue","unplugin-vue-macros/macros-global" /* ... */],
+    "types": ["vue", "vue/jsx", "unplugin-vue-macros/macros-global" /* ... */],
     "skipLibCheck": true
   },
   "vueCompilerOptions": {

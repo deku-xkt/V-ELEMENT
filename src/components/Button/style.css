@@ -27,7 +27,7 @@
   text-align: center;
   box-sizing: border-box;
   outline: none;
-  transition: .1s;
+  transition: 0.1s;
   font-weight: var(--vk-button-font-weight);
   user-select: none;
   vertical-align: middle;
@@ -46,7 +46,7 @@
     color: var(--vk-button-hover-text-color);
     border-color: var(--vk-button-hover-border-color);
     background-color: var(--vk-button-hover-bg-color);
-    outline: none;    
+    outline: none;
   }
   &:active {
     color: var(--vk-button-active-text-color);
@@ -57,7 +57,7 @@
   &.is-plain {
     --vk-button-hover-text-color: var(--vk-color-primary);
     --vk-button-hover-bg-color: var(--vk-fill-color-blank);
-    --vk-button-hover-border-color: var(--vk-color-primary);    
+    --vk-button-hover-border-color: var(--vk-color-primary);
   }
   /*round*/
   &.is-round {
@@ -69,20 +69,23 @@
     padding: 8px;
   }
   /*disabled*/
-  &.is-disabled, &.is-disabled:hover, &.is-disabled:focus, 
-  &[disabled], &[disabled]:hover, &[disabled]:focus 
-  {
+  &.is-disabled,
+  &.is-disabled:hover,
+  &.is-disabled:focus,
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus {
     color: var(--vk-button-disabled-text-color);
     cursor: not-allowed;
     background-image: none;
     background-color: var(--vk-button-disabled-bg-color);
     border-color: var(--vk-button-disabled-border-color);
   }
-  [class*=vk-icon] + span {
+  [class*='vk-icon'] + span {
     margin-left: 6px;
   }
 }
-@each $val in primary,success,warning,info,danger {
+@each $val in primary, success, warning, info, danger {
   .vk-button--$(val) {
     --vk-button-text-color: var(--vk-color-white);
     --vk-button-bg-color: var(--vk-color-$(val));
@@ -122,4 +125,3 @@
   font-size: 12px;
   border-radius: calc(var(--vk-border-radius-base) - 1px);
 }
-
